@@ -30,7 +30,6 @@ hbs.registerHelper('getCurrentYear', () => new Date().getFullYear());
 hbs.registerHelper('screamIt', (text) => text.toUpperCase());
 
 app.get('/', (req, res) => {
-  // res.send('<h1>Hello, World!</h1><p>This is an express server.</p>');
   res.render('home.hbs', {
     pageTitle: 'A Webpage',
     welcomeMessage: 'Welcome to "A Webpage."'
